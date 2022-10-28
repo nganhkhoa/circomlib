@@ -1,0 +1,15 @@
+diff --git a/node_modules/circom_tester/wasm/witness_calculator.js b/node_modules/circom_tester/wasm/witness_calculator.js
+index 8863d0a..6e009c3 100755
+--- a/node_modules/circom_tester/wasm/witness_calculator.js
++++ b/node_modules/circom_tester/wasm/witness_calculator.js
+@@ -41,7 +41,9 @@ module.exports = async function builder(code, options) {
+             },
+ 	    showSharedRWMemory: function() {
+ 		printSharedRWMemory ();
+-            }
++            },
++      printErrorMessage: function() {},
++      writeBufferMessage: function() {},
+ 
+         }
+     });
